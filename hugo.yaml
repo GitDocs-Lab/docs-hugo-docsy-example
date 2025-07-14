@@ -1,4 +1,5 @@
-baseURL: https://example.docsy.dev
+baseURL: "https://gitdocs-lab.github.io/docs-hugo-docsy-example/"
+
 title: Goldydocs
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
@@ -123,7 +124,9 @@ params:
   url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
+  #github_repo: https://github.com/google/docsy-example
+  github_repo: https://github.com/GitDocs-Lab/docs-hugo-docsy-example
+
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
   github_project_repo: https://github.com/google/docsy
