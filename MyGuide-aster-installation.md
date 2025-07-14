@@ -37,24 +37,24 @@
 
 ---
 
-## 2️⃣ Deploy na GitHub Pages
+## 2️⃣ Deploy na GitHub Pages (vetva `gh-docsy`)
 
 1. Priprav build do priečinka `public/`:
    ```bash
    hugo --minify
    ```
 
-2. Commitni obsah `public/` do vetvy (napr. `gh-pages`):
+2. Commitni obsah `public/` do vetvy `gh-docsy`:
    ```bash
-   git checkout --orphan gh-pages
+   git checkout --orphan gh-docsy
    git --work-tree=public add --all
-   git --work-tree=public commit -m "Deploy site"
-   git push origin gh-pages --force
+   git --work-tree=public commit -m "Deploy Docsy site"
+   git push origin gh-docsy --force
    git checkout main
    ```
 
 3. V GitHub repozitári nastav:
-   - Settings → Pages → Branch: `gh-pages` → `/ (root)`
+   - Settings → Pages → Branch: `gh-docsy` → `/ (root)`
 
 4. Hotovo! Web beží na:
    ```
@@ -82,8 +82,14 @@ Pre pokročilé úpravy odporúčam:
 
 ---
 
-Ak budeš chcieť, môžem ti pripraviť:
-✅ hotový `deploy.yml` pre GitHub Actions  
-✅ minimálny príklad na custom layout/menu
+### 📦 Poznámka k vetvám
 
-Stačí mi dať vedieť! 🚀
+Ak používaš viac dokumentačných systémov (napr. MkDocs, Hugo, Docusaurus), odporúčame pre každý samostatnú deploy vetvu:
+
+- `gh-docsy` → pre Docsy
+- `gh-mkdocs` → pre MkDocs
+- `gh-hugo` → pre čistý Hugo
+- `gh-docusaurus` → pre Docusaurus
+
+---
+
