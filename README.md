@@ -1,3 +1,6 @@
+
+# Systemthinking - adoptions
+[Guide how to manage new clone of example](MyGude.md)
 # Docsy Example
 
 [Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
